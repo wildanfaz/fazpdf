@@ -47,7 +47,7 @@ Dy : offset vertical,
 Metadata : change the metadata,
 ThumbnailResolution : set the resolution of the generated thumbnail
 */
-func (fc FileConfig) NewPDF() error {
+func NewPDF(fc FileConfig) error {
 	var (
 		conf = model.NewDefaultConfiguration()
 		imp  = pdfcpu.DefaultImportConfig()
