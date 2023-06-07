@@ -31,8 +31,7 @@ func main() {
 		},
 	}
 
-	err := fazpdf.NewPDF(fc)
-
+	err := fc.NewPDF()
 	if err != nil {
 		fmt.Println(err)
 	}
